@@ -1,0 +1,10 @@
+filename_Fluxcom='H:\ET Dataset\Fluxcom\LE.RS_V006.EBC-ALL.MLM-ALL.METEO-NONE.4320_2160.8daily.2004.nc';
+ncdisp(filename_Fluxcom);
+data_FluxcomLE=double(ncread(filename_Fluxcom,'LE'));
+data_FluxcomLE_n=double(ncread(filename_Fluxcom,'LE_n'));
+data_Fluxcomlon=double(ncread(filename_Fluxcom,'lon'));
+data_Fluxcomlat=double(ncread(filename_Fluxcom,'lat'));
+data_Fluxcomtime=double(ncread(filename_Fluxcom,'time'));
+data_Fluxcomlat_bnds=double(ncread(filename_Fluxcom,'lat_bnds'));
+data_Fluxcomlon_bnds=double(ncread(filename_Fluxcom,'lon_bnds'));
+data_Fluxcomtime_bnds=double(ncread(filename_Fluxcom,'time_bnds'));
